@@ -13,3 +13,10 @@ Dark green: #28b485
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+}
