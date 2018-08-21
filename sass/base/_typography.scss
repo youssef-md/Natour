@@ -10,7 +10,7 @@ body {
   color: $color-white;
   text-transform: uppercase;
   margin-bottom: 6rem;
-
+  user-select: none;
   &--main {
     display: block;
     font-size: 6rem;
@@ -36,3 +36,22 @@ body {
   }
 }
 
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 15rem;
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all .2s;
+  letter-spacing: 2px;
+  user-select: none;
+
+  &:hover {
+    transform: skewX(25deg);
+    text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+  }
+}

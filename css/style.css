@@ -51,7 +51,8 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+  user-select: none; }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
@@ -72,6 +73,30 @@ body {
     animation-name: moveInRight;
     animation-duration: 2s;
     animation-timing-function: ease-in-out; }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 15rem;
+  background-image: linear-gradient(to right, #55c57a, #28b485);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all .2s;
+  letter-spacing: 2px;
+  user-select: none; }
+  .heading-secondary:hover {
+    transform: skewX(25deg);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.u-center-text {
+  text-align: center; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -29vh; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
