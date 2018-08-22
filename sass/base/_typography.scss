@@ -51,7 +51,21 @@ body {
   user-select: none;
 
   &:hover {
-    transform: skewX(25deg);
+    transform: skewX(-20deg);
     text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+  }
+}
+
+.heading-terciary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  
+  &:not(:last-child) {
+    margin-bottom: 3rem;    
   }
 }
