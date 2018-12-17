@@ -245,10 +245,11 @@ body {
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.15);
   transition: transform .3s; }
   .feature-box:hover {
-    transform: translateY(-1.5rem) scale(1.03); }
+    transform: translateY(-1.5rem) scale(1.03);
+    box-shadow: 0 1.5rem 5.5rem rgba(0, 0, 0, 0.15); }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
@@ -258,10 +259,13 @@ body {
     color: transparent; }
 
 .card {
-  background-color: orangered;
-  height: 50rem;
-  transition: all .8s; }
-  .card:hover {
+  perspective: 150rem;
+  -moz-perspective: 150rem; }
+  .card__side {
+    background-color: orangered;
+    height: 50rem;
+    transition: all .8s; }
+  .card:hover .card__side {
     transform: rotateY(180deg); }
 
 .header {
