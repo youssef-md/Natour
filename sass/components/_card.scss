@@ -30,7 +30,7 @@
   }
 
   &:hover &__side--front { // when .card:hover then .card__side--front will be rotated
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
   }
 
   &:hover &__side--back { // when .card:hover then .card__side--back will be rotated back
