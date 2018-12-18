@@ -12,17 +12,16 @@
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden; //hide the back part of the card
+    backface-visibility: hidden; // Hide the back part of the card
     border-radius: 3px;
+    overflow: hidden; // Don't let the square image overlap the rouded corners
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
     &--front {
       background-color: $color-white;
     }
-
     &--back {
       transform: rotateY(180deg);
-
       &-1 {
         background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
       }
@@ -35,5 +34,23 @@
 
   &:hover &__side--back { // when .card:hover then .card__side--back will be rotated back
     transform: rotateY(0);
+  }
+
+  // FRONT SIDE STYLING
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: soft-light;
+
+    &--1 {
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
+                        url(../img/nat-5.jpg); // Path using style.css as base
+    }
+    &--2 {
+      background-image: url(../img/nat-5.jpg); // Path using style.css as base
+    }
+    &--3 {
+      background-image: url(../img/nat-5.jpg); // Path using style.css as base
+    }
   }
 }
