@@ -296,7 +296,9 @@ body {
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg); }
   .story__img {
-    height: 100%; }
+    height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    transition: all .5s; }
   .story__text {
     transform: skewX(12deg); }
   .story__caption {
@@ -305,7 +307,7 @@ body {
     left: 50%;
     transform: translate(-50%, 20%);
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.3rem;
     text-align: center;
     opacity: 0;
     transition: all .5s;
@@ -313,6 +315,9 @@ body {
   .story:hover .story__caption {
     opacity: 1;
     transform: translate(-50%, -50%); }
+  .story:hover .story__img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%); }
 
 .card {
   perspective: 150rem;
