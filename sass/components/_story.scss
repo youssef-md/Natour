@@ -8,6 +8,7 @@
   padding-left: 9rem;
   font-size: $default-font-size;
   transform: skewX(-12deg);
+  position: relative;
 
   &__shape {
     width: 15rem;
@@ -26,5 +27,15 @@
 
   &__text {
     transform: skewX(12deg)
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    font-size: 2rem;
+    text-align: center;
   }
 }
