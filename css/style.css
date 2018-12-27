@@ -156,8 +156,7 @@ body {
 
 .section-stories {
   position: relative;
-  padding: 8rem 0;
-  margin-top: 10rem; }
+  padding: 8rem 0; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -421,7 +420,8 @@ body {
   height: 100%;
   width: 100%;
   opacity: .15;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: -1; }
   .bg-video__content {
     height: 100%;
     width: 100%;
