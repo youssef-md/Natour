@@ -6,7 +6,8 @@
   width: 100%;
   opacity: .15;
   overflow: hidden;
-
+  z-index: -1;
+  
   &__content {
       height: 100%;
       width: 100%;
