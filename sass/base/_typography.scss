@@ -10,6 +10,8 @@ body {
   text-transform: uppercase;
   margin-bottom: 6rem;
   user-select: none;
+  backface-visibility: hidden;
+  
   &--main {
     display: block;
     font-size: 6rem;
@@ -47,6 +49,7 @@ body {
   transition: all .2s;
   letter-spacing: 2px;
   user-select: none;
+  backface-visibility: hidden;
 
   &:hover {
     transform: skewX(-20deg);
