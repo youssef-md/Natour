@@ -16,6 +16,7 @@
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba($color-black, .1);
     text-align: center;
+    cursor: pointer;
   }
 
   &__background {
@@ -114,10 +115,19 @@
       content: "";
       position: absolute;
       left: 0;
+      transition: all .2s;
     }
 
-    &::before { top: -1rem; }
-    &::after { top: 1rem; }
+    &::before { top: -.8rem; }
+    &::after { top: .8rem; }
+
   }
 
+  &__button:hover &__icon::before { // icon is a child of button, thats why this works
+    top: -1rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 1rem;
+  }
 }
