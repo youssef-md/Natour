@@ -28,7 +28,7 @@
     right: 6.5rem;
     background-image: radial-gradient($color-primary, $color-primary-dark);
     z-index: 1000;
-    transition: transform .8s cubic-bezier(.66,-0.24,.36,1.02);
+    transition: transform .8s ease-in;
   }
 
   &__nav {
@@ -39,7 +39,7 @@
     z-index: 1500;
     opacity: 0;
     width: 0;
-    transition: all .6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   &__list {
@@ -101,6 +101,7 @@
   &__icon {
     position: relative;
     margin-top: 3.5rem;
+    
     &,
     &::before,
     &::after {
@@ -108,6 +109,7 @@
       height: 2px;
       background-color: $color-gray-dark-3;
       display: inline-block;
+      transition: all .2s; 
     }
 
     &::before,
@@ -115,7 +117,6 @@
       content: "";
       position: absolute;
       left: 0;
-      transition: all .2s;
     }
 
     &::before { top: -.8rem; }
@@ -129,5 +130,19 @@
 
   &__button:hover &__icon::after {
     top: 1rem;
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
   }
 }
