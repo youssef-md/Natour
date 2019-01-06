@@ -537,6 +537,10 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 3000; }
   .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 75%;
     height: 60rem;
     background-color: #fff;
