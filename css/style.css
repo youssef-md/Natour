@@ -562,9 +562,16 @@ body {
     font-size: 1.4rem;
     margin-bottom: 4rem;
     text-align: justify;
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid #eee;
     column-count: 2;
     column-gap: 4rem;
-    column-rule: 1px solid #eee; }
+    column-rule: 1px solid #eee;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
 
 .header {
   height: 95vh;
