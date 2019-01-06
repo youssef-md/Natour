@@ -622,10 +622,10 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 900px) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 900px) {
     .row {
       max-width: 50rem;
       padding: 0 3rem; } }
@@ -637,11 +637,11 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media only screen and (max-width: 56.25em) {
+      @media (max-width: 900px) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 900px) {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-of-2 {
