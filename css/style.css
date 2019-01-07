@@ -122,6 +122,12 @@ body {
   letter-spacing: 2px;
   user-select: none;
   backface-visibility: hidden; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2rem; } }
   .heading-secondary:hover {
     transform: skewX(-20deg);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
