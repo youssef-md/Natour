@@ -10,7 +10,7 @@ html {
   // 1rem = 10px, 16px: default...10/16 = 62.5% of the total font-size 
   font-size: 62.5%; // defines what 1rem is
 
-  // in case of 700px the tab-port would apply because of by order
+  // in case of 700px the tab-port would apply because it's the last to match
   
   @include respond(big-desktop) {
     font-size: 75%; // 1rem = 12px, 12/16 = 75%;
@@ -21,12 +21,13 @@ html {
   @include respond(tab-port) { // width < 900 ?
     font-size: 50%; // 1rem = 8px, 8/16 = 50%
   }
-  @include respond(phone) {
-    font-size: 28%;
-  }
 }
 
 body{
   box-sizing: border-box;
   padding: 4rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }

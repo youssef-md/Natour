@@ -31,13 +31,13 @@ html {
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (max-width: 37.5em) {
-    html {
-      font-size: 28%; } }
 
 body {
   box-sizing: border-box;
   padding: 4rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 @keyframes moveInLeft {
   0% {
@@ -93,6 +93,10 @@ body {
     animation-iteration-count: 3;
     animation-delay: 1s;
     */ }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-size: 4.5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -101,6 +105,10 @@ body {
     animation-name: moveInRight;
     animation-duration: 2s;
     animation-timing-function: ease-in-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem;
+        font-size: 1.8rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
