@@ -2,6 +2,10 @@
   background-color: $color-gray-light-1;
   padding: 28rem 0;  
   margin-top: -29vh;
+
+  @include respond(tab-port) {
+    padding: 26rem 0;   
+  }
 }
 
 .section-features {
@@ -19,22 +23,38 @@
   & > * { //Select all the direct child... just the row class, and unskew it
     transform: skewY(7deg);
   }
+
+  @include respond(tab-port) {
+    padding: 24rem 0;   
+  }
 }
 
 .section-tours {
   background-color: $color-gray-light-1;
   padding: 21rem 0 15rem 0;  
   margin-top: -10rem;
+
+  @include respond(tab-port) {
+    padding: 16rem 0 8rem 0;   
+  }
 }
 
 .section-stories {
   position: relative;
   padding: 8rem 0;
+  
+  @include respond(tab-port) {
+    padding: 5.5rem 0;   
+  }
 }
 
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+
+  @include respond(tab-port) {
+    padding: 8rem 0;   
+  }
 }
 
 .book {
