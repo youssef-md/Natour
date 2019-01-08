@@ -184,7 +184,7 @@ body {
     transform: skewY(7deg); }
   @media (max-width: 56.25em) {
     .section-features {
-      padding: 24rem 0; } }
+      padding: 14rem 0; } }
 
 .section-tours {
   background-color: #f7f7f7;
@@ -345,6 +345,9 @@ body {
   box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.15);
   transition: transform .3s;
   user-select: none; }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      padding: 2rem; } }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03);
     box-shadow: 0 1.5rem 5.5rem rgba(0, 0, 0, 0.15); }
@@ -356,6 +359,9 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     backface-visibility: hidden; }
+    @media (max-width: 56.25em) {
+      .feature-box__icon {
+        margin-bottom: 0; } }
 
 .story {
   width: 75%;
