@@ -153,7 +153,7 @@
     border-radius: 3px;
     background-color: $color-white;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    
+
     &__side {
       height: auto;
       position: relative;
@@ -168,6 +168,10 @@
     &:hover &__side--front { // when .card:hover then .card__side--front will be rotated
       transform: rotateY(0);
     }
+
+    &__details {
+      padding: 0rem;
+    }
   
     &__cta {
       position: relative;
@@ -175,15 +179,15 @@
       left: 0;
       transform: translate(0);
       width: 100%;
-      padding: 4rem;
+      padding: 3.5rem;
     }
   
     &__price-box {
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
   
     &__price-value {
-      font-size: 6rem;
+      font-size: 4.5rem;
       font-weight: 100;
     }
   }
