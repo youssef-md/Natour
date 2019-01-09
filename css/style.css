@@ -811,12 +811,12 @@ body {
   transition: transform .8s ease-in; }
   @media (max-width: 56.25em) {
     .navigation__background {
-      top: 4.5rem;
-      right: 4.5rem; } }
+      top: 4.7rem;
+      right: 4.7rem; } }
   @media (max-width: 37.5em) {
     .navigation__background {
-      top: 3rem;
-      right: 3rem; } }
+      top: 3.2rem;
+      right: 3.2rem; } }
 
 .navigation__nav {
   height: 100vh;
